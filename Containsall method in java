@@ -1,0 +1,33 @@
+package com.infinite.collection.list;
+
+import java.util.ArrayList;
+
+public class List7containsAll {
+public static void main(String[] args) {
+	ArrayList<String> s1=new ArrayList<String>();
+	s1.add("A");
+	s1.add("B");
+	s1.add("C");
+	s1.add("D");
+	s1.add("E");
+	//for(String n1:s1)
+		System.out.println("The s1 Arralist element"+s1);
+	ArrayList<String> s2=new ArrayList<String>();
+	s2.add("A");
+	s2.add("B");
+	s2.add("C");
+	s2.add("D");
+	s2.add("E");
+	//for(String n2:s2)
+		System.out.println("The s2 arralist element"+s2);
+   boolean ans=s1.containsAll(s2);
+   if(ans)
+   {
+	   System.out.println("The arralist holds all elements..."+ans);
+   }
+   else
+   {
+	   System.out.println("All the The arraylist s2 doesnt present in s1.."+ans);
+   }
+}
+}
