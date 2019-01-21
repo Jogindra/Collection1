@@ -1,0 +1,50 @@
+package com.infinite.collection.list;
+
+import java.util.ArrayList;
+import java.util.ListIterator;
+
+public class List12retainsAll {
+	public static void main(String[] args) {
+		ArrayList<String> city=new ArrayList<String>();
+		      city.add("Chennei");
+		      city.add("BBsr");
+		      city.add("Hyd");
+		      city.add("Mumbai");
+		      city.add("Bangalore");
+		      System.out.println("The cities in the First List...");
+		      System.out.println(city);
+		    ListIterator<String> listIterator = city.listIterator();
+		    
+		    int count = 1;
+		    while(listIterator.hasNext()) {
+		    	
+		    	System.out.println(listIterator.next());
+		    	
+		    	
+		    	}
+		    while(listIterator.hasPrevious()) {
+		    System.out.println(listIterator.previous());
+		    }
+		      
+		      
+		   /*   ArrayList<String> city1=new ArrayList<String>();
+		      city1.add("Chennei");
+		      city1.add("BBsr");
+		      city1.add("kolkata");
+		      city1.add("Delhi");
+		      city1.add("Bangalore");
+		      System.out.println("The cities in the 2nd List..");
+		      System.out.println(city1);
+		      
+		      city.retainAll(city1);
+		      System.out.println("The elements after applying retainsAll() to the city:");
+		      System.out.println(city);
+		      city1.retainAll(city);
+		      System.out.println("The elements after appling retainsAll() to the city1");
+		      System.out.println(city1);
+		      System.out.println(city);
+		     
+*/		   
+	}
+
+}
