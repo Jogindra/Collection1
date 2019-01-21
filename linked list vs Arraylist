@@ -1,0 +1,30 @@
+package com.infinite.collection.list;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class linkedlistvsArrayList {
+	public static void main(String[] args) {
+		ArrayList<Integer> a=new ArrayList<Integer>();
+		LinkedList<Integer> l=new LinkedList<Integer>();
+		a.add(1);
+		a.add(11);
+		a.add(1111);
+		a.add(111111);
+		System.out.println(a.subList(1,3));
+		System.out.println(a);
+		l.add(11);
+		l.add(45);
+		l.add(30);
+		System.out.println(l.indexOf(11));
+		System.out.println(a.hashCode());
+		System.out.println(l.hashCode());
+		System.out.println(l.indexOf(45));
+		System.out.println(l.indexOf(30));
+		int j=l.size();
+		for(int i=0;i<j;i++)
+		{
+			System.out.println(l.get(i));
+		}
+
+}}
