@@ -1,0 +1,30 @@
+package com.infinite.collection.list;
+
+import java.util.ArrayList;
+
+public class List10isEmpty {
+	public static void main(String[] args) {
+		
+		ArrayList<String> a1=new ArrayList<String>();
+		a1.add("1.c");
+		a1.add("2.c++");
+		a1.add("3.java");
+		a1.add("1.python");
+		a1.add("1.Net");
+		System.out.println(a1);
+		a1.clear();
+		//Clear method is uded to clear all elements from the list
+		System.out.println(a1);
+		boolean i=a1.isEmpty();
+		if(i)
+		{
+			System.out.println("The array is empty= "+i);
+		}
+		else
+		{
+			System.out.println("tHE aRRAYLIST IS NOT EMPTY= "+i);
+		}
+		
+	}
+
+}
