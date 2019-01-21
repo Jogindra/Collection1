@@ -1,0 +1,39 @@
+package com.infinite.collection.list;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class ArralistAssignment1 {
+public static void main(String[] args) {
+	
+	ArrayList<String> al=new ArrayList<String>();
+	al.add("red");
+	al.add("black");
+	al.add("pink");
+	al.add("blue");
+	System.out.println(" printing of all elements of Arraylist"+al);
+	
+	//usage of foreach loop
+	for (String string : al) {
+		
+		System.out.println(string);
+		
+    //usage of iterator
+		Iterator i=al.iterator();
+		while(i.hasNext())
+		{
+			System.out.println(i.next());
+		}
+	//finding the elements using index
+		int j=al.size();
+		
+		for (int index = 0; index < j; index++)
+		{
+		     
+			   System.out.println(al.get(index));
+		
+		
+	    }
+    }
+  }
+}
