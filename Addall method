@@ -1,0 +1,32 @@
+package com.infinite.collection.list;
+import java.util.ArrayList;
+public class ArralistJoining {
+	public static void main(String[] args) {
+		ArrayList<String> al=new ArrayList<String>();
+		al.add("Delhi");
+		al.add("Delhi");
+		al.add("Delhi");
+		al.add("Delhi");
+		al.add("Delhi");
+		
+		ArrayList<String> al1=new ArrayList<String>();
+		
+		al.add("Chennei");
+		al.add("Chennei");
+		al.add("Chennei");
+		al.add("Chennei");
+		al.add("Chennei");
+		
+		
+		ArrayList<String> al2=new ArrayList<String>();
+		al2.addAll(al);
+		al2.addAll(al1);
+		for (String string : al2) {
+			System.out.println(string);	
+		}
+		
+		System.out.println(al2);
+		
+	}
+
+}
