@@ -1,0 +1,26 @@
+package com.infinite.collection.list;
+
+import java.util.ArrayList;
+import java.util.ListIterator;
+
+public class List12ListIterator {
+	public static void main(String[] args) {
+		ArrayList<Integer> a=new ArrayList<Integer>();
+		a.add(10);
+		a.add(20);
+		a.add(30);
+		a.add(40);
+		System.out.println(a);
+		
+		
+		ListIterator itr=a.listIterator();
+		while(itr.hasNext())
+		{
+			boolean s=(boolean)itr.hasNext();
+			
+			
+		}
+		
+	}
+
+}
